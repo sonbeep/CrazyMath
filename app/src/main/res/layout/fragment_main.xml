@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/purple_700"
+    android:padding="20dp"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.example.crazymath.view.widget.CrazyTextView
+            android:id="@+id/tv_score"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Score: 0"
+            android:textSize="28sp"
+            android:textColor="@color/white"
+            tools:ignore="HardcodedText" />
+        <com.example.crazymath.view.widget.CrazyTextView
+            android:id="@+id/tv_best"
+            android:layout_width="0dp"
+            android:gravity="end"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Best: 17"
+            android:textSize="28sp"
+            android:textColor="@color/white"
+            tools:ignore="HardcodedText" />
+    </TableRow>
+    <com.example.crazymath.view.widget.CrazyTextView
+        android:id="@+id/tv_time"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:text="10"
+        android:layout_marginTop="10dp"
+        android:textSize="40sp"
+        android:textColor="@color/yellow"
+        tools:ignore="HardcodedText" />
+    <com.example.crazymath.view.widget.CrazyTextView
+        android:id="@+id/tv_expression"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:text="3+5=?"
+        android:layout_marginTop="10dp"
+        android:textSize="60sp"
+        android:textColor="@color/white"
+        tools:ignore="HardcodedText" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="50dp"
+        android:padding="5dp"
+        android:background="@color/colorRedAlpha"
+        android:layout_height="wrap_content">
+        <com.example.crazymath.view.widget.CrazyTextView
+            android:id="@+id/tv_anser_a"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:text="8"
+            android:background="@color/colorRed"
+
+            android:textSize="40sp"
+            android:textColor="@color/white"
+            tools:ignore="HardcodedText" />
+    </FrameLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="50dp"
+        android:padding="5dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorGreenAlpha"
+        android:layout_height="wrap_content">
+
+        <com.example.crazymath.view.widget.CrazyTextView
+            android:id="@+id/tv_anser_b"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorGreen"
+            android:gravity="center"
+            android:text="6"
+            android:textColor="@color/white"
+            android:textSize="40sp"
+            tools:ignore="HardcodedText,TextContrastCheck" />
+    </FrameLayout>
+    <FrameLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="50dp"
+        android:padding="5dp"
+        android:background="@color/colorYellowAlpha"
+        android:layout_height="wrap_content">
+
+        <com.example.crazymath.view.widget.CrazyTextView
+            android:id="@+id/tv_anser_c"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorYellow"
+            android:gravity="center"
+            android:text="2"
+            android:textColor="@color/white"
+            android:textSize="40sp"
+            tools:ignore="HardcodedText,TextContrastCheck" />
+    </FrameLayout>
+
+
+</LinearLayout>
